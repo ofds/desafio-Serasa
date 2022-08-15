@@ -1,4 +1,4 @@
-package com.example.desafio.entity;
+package com.example.desafio.model;
 
 import java.util.List;
 
@@ -19,6 +19,10 @@ public class Atuacao {
 	@ElementCollection(targetClass=String.class)
 	private List<String> estados;
 	
+	public Atuacao(String regiao, List<String> estados) {
+		this.regiao = regiao;
+		this.estados = estados;
+	}
 	public List<String> getEstados() {
 		return estados;
 	}

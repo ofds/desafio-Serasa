@@ -2,7 +2,7 @@ package com.example.desafio.service;
 
 import java.util.Optional;
 
-import com.example.desafio.entity.Atuacao;
+import com.example.desafio.model.Atuacao;
 
 public interface IAtuacaoService {
 

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.desafio.entity.Atuacao;
+import com.example.desafio.model.Atuacao;
 import com.example.desafio.service.AtuacaoService;
 
 @RestController

@@ -2,7 +2,7 @@ package com.example.desafio.service;
 
 import java.util.List;
 
-import com.example.desafio.entity.Vendedor;
+import com.example.desafio.model.Vendedor;
 
 import view.VendedorView;
 

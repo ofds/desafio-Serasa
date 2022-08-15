@@ -1,4 +1,4 @@
-package com.example.desafio.entity;
+package com.example.desafio.model;
 
 
 import java.util.Date;
@@ -19,6 +19,15 @@ import lombok.ToString;
 @ToString
 public class Vendedor {
 	
+	public Vendedor(String nome, String telefone, Integer idade, String cidade, String estado, String regiao) {
+		super();
+		this.nome = nome;
+		this.telefone = telefone;
+		this.idade = idade;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.regiao = regiao;
+	}
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private Long id;

@@ -2,8 +2,8 @@ package view;
 
 import java.util.List;
 
-import com.example.desafio.entity.Atuacao;
-import com.example.desafio.entity.Vendedor;
+import com.example.desafio.model.Atuacao;
+import com.example.desafio.model.Vendedor;
 
 public class VendedorView {
 

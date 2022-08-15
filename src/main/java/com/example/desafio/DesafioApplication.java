@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan
-@EntityScan("com.example.desafio.entity")
+@EntityScan("com.example.desafio.model")
 @EnableJpaRepositories("com.example.repository")
 public class DesafioApplication {
 

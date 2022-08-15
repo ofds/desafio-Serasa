@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.desafio.entity.Vendedor;
 import com.example.desafio.service.VendedorService;
-import com.example.repository.IVendedorRepository;
 
 import view.VendedorView;
 

@@ -1,10 +1,7 @@
 package com.example.desafio.service;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,10 +51,7 @@ public class VendedorService implements IVendedorService {
 		} catch (Exception e) {
 			System.out.println("\n\nVendedorService: Problemas na busca de vendedores");
 		}
-		
-		
-		Optional<Atuacao> atuacao;
-		VendedorView vendedorView = new VendedorView();
+
 		List<VendedorView> vendedoresView = new ArrayList<VendedorView>();
 		vendedores.forEach((temp) -> {
 			vendedoresView.add(new VendedorView(temp,atuacaoService.findById(temp.getRegiao()).get()));

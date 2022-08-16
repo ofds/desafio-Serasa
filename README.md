@@ -6,28 +6,28 @@ Importante: Os campos de vendedores e atuacao sao validados, entao será necess�
 
 Vendedor
 {
-“nome”: “Fulano de Tal”, (nao pode ser vazio)
+  “nome”: “Fulano de Tal”, (nao pode ser vazio)
 
-“telefone”: “99 99999-9999”, (2 numeros, espaço, 5 numeros, traço, 4 numeros)
+  “telefone”: “99 99999-9999”, (2 numeros, espaço, 5 numeros, traço, 4 numeros)
 
-“idade”: 99, (entre 1 e 100)
+  “idade”: 99, (entre 1 e 100)
 
-“cidade”: “Cidade de Fulano”, (nao pode ser vazio)
+  “cidade”: “Cidade de Fulano”, (nao pode ser vazio)
 
-“estado”: “XX”,   (duas letras maiúsculas)
+  “estado”: “XX”,   (duas letras maiúsculas)
 
-“regiao”: “sudeste” (nao pode ser vazio)
+  “regiao”: “sudeste” (nao pode ser vazio)
 }
 
 
 Atuacao
 {
-“regiao”: “sudeste”, (nao pode ser vazio)
+  “regiao”: “sudeste”, (nao pode ser vazio)
 
-“estados”: [
-“SP”,
-“RJ”,
-“MG”,
-“ES”
-]
+  “estados”: [
+    “SP”,
+    “RJ”,
+    “MG”,
+    “ES”
+  ]
 }

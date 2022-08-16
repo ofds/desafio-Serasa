@@ -16,7 +16,7 @@ Vendedor
 
 “estado”: “XX”,   (duas letras maiúsculas)
 
-“regiao”: “sudeste”
+“regiao”: “sudeste” (nao pode ser vazio)
 }
 
 

@@ -6,6 +6,7 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 import lombok.ToString;
 
@@ -15,7 +16,9 @@ import lombok.ToString;
 public class Atuacao {
 	
 	@Id
+	@NotBlank
 	private String regiao;
+	
 	@ElementCollection(targetClass=String.class)
 	private List<String> estados;
 	

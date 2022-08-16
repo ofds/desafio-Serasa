@@ -1,5 +1,7 @@
 package com.example.desafio.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +19,7 @@ public class AtuacaoController {
 	AtuacaoService atuacaoService;
 	
 	@PostMapping("/atuacao")
-	public ResponseEntity<Atuacao> save(@RequestBody Atuacao atuacao){
+	public ResponseEntity<Atuacao> save(@Valid @RequestBody Atuacao atuacao){
 		if(atuacaoService.save(atuacao)) {
 			return new ResponseEntity<>(HttpStatus.CREATED);
 		}else{

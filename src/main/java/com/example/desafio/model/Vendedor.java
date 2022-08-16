@@ -9,6 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -27,11 +31,22 @@ public class Vendedor {
 	@CreationTimestamp
 	private Date dataInclusao;
 	
+	@NotBlank
 	private String nome;
+	
+	@Pattern(regexp = "[0-9]{2} [0-9]{5}-[0-9]{4}")
 	private String telefone;
+	
+	@Min(1)
+	@Max(100)
 	private Integer idade;
+	
+	@NotBlank
 	private String cidade;
+	
+	@Pattern(regexp = "[A-Z]{2}")
 	private String estado;
+	@NotBlank
 	private String regiao;
 	
 	public Long getId() {

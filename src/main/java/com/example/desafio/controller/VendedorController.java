@@ -46,7 +46,7 @@ public class VendedorController {
 	public ResponseEntity<VendedorView> findByID(@PathVariable Long id) {
 		VendedorView vendedorView = vendedorService.findById(id);
 		if(vendedorView!=null) {
-			return new ResponseEntity<VendedorView>(vendedorView,HttpStatus.ACCEPTED);
+			return new ResponseEntity<VendedorView>(vendedorView,HttpStatus.OK);
 		}else{
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}

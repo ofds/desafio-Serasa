@@ -19,15 +19,6 @@ import lombok.ToString;
 @ToString
 public class Vendedor {
 	
-	public Vendedor(String nome, String telefone, Integer idade, String cidade, String estado, String regiao) {
-		super();
-		this.nome = nome;
-		this.telefone = telefone;
-		this.idade = idade;
-		this.cidade = cidade;
-		this.estado = estado;
-		this.regiao = regiao;
-	}
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private Long id;
@@ -43,6 +34,18 @@ public class Vendedor {
 	private String estado;
 	private String regiao;
 	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Date getDataInclusao() {
+		return dataInclusao;
+	}
+	public void setDataInclusao(Date dataInclusao) {
+		this.dataInclusao = dataInclusao;
+	}
 	public String getNome() {
 		return nome;
 	}

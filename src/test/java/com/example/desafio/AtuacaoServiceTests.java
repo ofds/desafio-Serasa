@@ -37,7 +37,9 @@ public class AtuacaoServiceTests {
 	@Test
 	public void saveTest()
 	{
-		Atuacao atuacao = new Atuacao(regiao,estados);
+		Atuacao atuacao = new Atuacao();
+		atuacao.setEstados(estados);
+		atuacao.setRegiao(regiao);
 
 		boolean success = atuacaoService.save(atuacao);
 
@@ -48,7 +50,9 @@ public class AtuacaoServiceTests {
 	@Test
 	public void findByIdTest()
 	{
-		Atuacao atuacao = new Atuacao(regiao,estados);
+		Atuacao atuacao = new Atuacao();
+		atuacao.setEstados(estados);
+		atuacao.setRegiao(regiao);
 		when(atuacaoRepository.findById(regiao)).thenReturn(Optional.of(atuacao));
 		
 		Optional<Atuacao> atuacaoReturned = atuacaoRepository.findById(regiao);

@@ -24,14 +24,14 @@ public class VendedorService implements IVendedorService {
 
 	@Override
 	public boolean save(Vendedor vendedor) {
-		
+
 		try {
 			vendedor = vendedorRepository.save(vendedor);
 		} catch (Exception e) {
 			return false;
 		}
 		return true;
-		
+
 	}
 
 	@Override
@@ -43,20 +43,18 @@ public class VendedorService implements IVendedorService {
 		} catch (Exception e) {
 		}
 		List<VendedorView> vendedoresView = new ArrayList<VendedorView>();
-		if (!vendedores.isEmpty()) {
-			vendedores.forEach((temp) -> {
-				vendedoresView.add(new VendedorView(temp, atuacaoService.findById(temp.getRegiao()).get()));
-			});
+		for (int i = 0; i < vendedores.size(); i++) {
+			vendedoresView.add(new VendedorView(vendedores.get(i), atuacaoService.findById(vendedores.get(i).getRegiao()).get()));
 		}
 		return vendedoresView;
-		
+
 	}
 
 	@Override
 	public VendedorView findById(Long id) {
 		Optional<Vendedor> vendedor = Optional.empty();
 		vendedor = vendedorRepository.findById(id);
-		
+
 		if (vendedor.isEmpty()) {
 			System.out.println("\n\nVendedorService: Vendedor nao encontrado");
 			return null;

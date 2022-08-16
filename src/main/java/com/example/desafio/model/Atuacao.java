@@ -19,6 +19,9 @@ public class Atuacao {
 	@ElementCollection(targetClass=String.class)
 	private List<String> estados;
 	
+	public void setRegiao(String regiao) {
+		this.regiao = regiao;
+	}
 	public List<String> getEstados() {
 		return estados;
 	}

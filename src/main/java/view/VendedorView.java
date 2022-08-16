@@ -1,6 +1,7 @@
 package view;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.example.desafio.model.Atuacao;
 import com.example.desafio.model.Vendedor;

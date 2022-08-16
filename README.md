@@ -5,6 +5,7 @@ Este repositorio contem meu codigo de resolucao do desafio para o processo selet
 Importante: Os campos de vendedores e atuacao sao validados, entao será necessário passar os dados da seguinte forma:
 
 Vendedor
+
 {
   “nome”: “Fulano de Tal”, (nao pode ser vazio)
 
@@ -21,6 +22,7 @@ Vendedor
 
 
 Atuacao
+
 {
   “regiao”: “sudeste”, (nao pode ser vazio)
 
